@@ -10,7 +10,7 @@ const Header = () => {
   ]
   console.log(NavItem);
   return (
-    <div className="h-[226px] border space-y-6 pt-4">
+    <div className="h-[226px]  space-y-6 pt-4">
       {/*top nav  */}
       <div className="flex  md:flex justify-center items-center gap-5">
         <h1 className="text-smTexColor md:text-xl text-sm">(800) 120 2387</h1>
