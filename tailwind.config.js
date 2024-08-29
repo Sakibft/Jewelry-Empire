@@ -11,8 +11,11 @@ export default {
         primary: "#131313",
          secondary: "#C0C0C0",
          "textYellow": "#E8CF36",
-         "smTexColor": "#E6E6E6"
-
+         "smTexColor": "#E6E6E7"
+      },
+      fontFamily:{
+        'fell': ['"IM Fell Double Pica"', 'serif'],
+        'inter': ['Inter', 'sans-serif'],
       }
     },
   },
