@@ -3,8 +3,8 @@
  const App = () => {
   return (
     <div>
-      
-    </div>
+ <h1 className="text-4xl text-green-600 font-bold text-center">hahahlseisdnxd</h1>
+     </div>
   );
  };
  
