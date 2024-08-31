@@ -3,6 +3,7 @@ import Banner from './Banner';
 import Footer from './Footer';
 import Header from './Header';
 import TopCard from './TopCard';
+import TopProducts from './TopProducts';
  
 
 const Layout = () => {
@@ -12,6 +13,7 @@ const Layout = () => {
          <div className=''>
          <Banner></Banner>
          <TopCard></TopCard>
+         <TopProducts></TopProducts>
          </div>
          <Footer></Footer>
         </div>

@@ -1,11 +1,123 @@
-import React from 'react';
+import React from "react";
+import { LuMoveRight } from "react-icons/lu";
+import im1 from "../../src/image/im1.png";
+import im2 from "../../src/image/im2.png";
+import im3 from "../../src/image/im3.png";
+import im4 from "../../src/image/im4.png";
+import im5 from "../../src/image/im5.png";
+import im6 from "../../src/image/im6.png";
+import im7 from "../../src/image/im7.png";
+import im8 from "../../src/image/im8.png";
+ 
+  const topProducts = [
+    {
+      image: im1,
+      title: "Earring Necklace Jewellery Chain Gemstone         ",
+      Rs: "124000",
+      rating: "5",
+    },
+    {
+      image: im2,
+      title: "",
+      Rs: "145000",
+      rating: "5",
+    },
+    {
+      image: im3,
+      title: "Earring Necklace Jewellery Chain Gemstone  ",
+      Rs: "122300",
+      rating: "5",
+    },
+    {
+      image: im4,
+      title: "Earring Necklace Jewellery Chain Gemstone ",
+      Rs: "123030",
+      rating: "4.9 ",
+    },
+    {
+      image: im5,
+      title: "Earring Necklace Jewellery Chain Gemstone",
+      Rs: "283320",
+      rating: "4.2",
+    },
+    {
+      image: im6,
+      title: "Earring Necklace Jewellery Chain Gemstone",
+      Rs: "124000",
+      rating: "4.9",
+    },
+    {
+      image: im7,
+      title: "Earring Necklace Jewellery Chain Gemstone",
+      Rs: "3l4566",
+      rating: "5",
+    },
+    {
+      image: im8,
+      title: "Earring Necklace Jewellery Chain Gemstone",
+      Rs: "3l4566",
+      rating: "5",
+    },
+  ];
 
-const TopProducts = () => {
-    return (
-        <div>
-            top Products
+  const ProductSection = ({ products }) => (
+    <div className="flex justify-center gap-x-[138px] m-5  ">
+      {products.map((item, index) => (
+        <div
+          className="text-white border border-gray-700 w-[275px] h-[338px] flex flex-col justify-end items-center "
+          key={index}
+        >
+          <img
+            src={item.image}
+            alt={item.title}
+            style={{ height: 'auto', width: '100%' }}
+            className="max-h-[220px] object-contain "
+          />
+          <div className="p-4 space-y-2">
+            <p className="text-smTexColor text-sm w-[220px]">{item.title}</p>
+            <div className="flex justify-between">
+              <p className="font-semibold">RS {item.Rs}</p>
+              <p>{item.rating}</p>
+            </div>
+          </div>
         </div>
-    );
-};
+      ))}
+    </div>
+  );
+  
+  const ProductDisplay = () => (
+    <div>
+      {/* nav */}
+      <div className="flex justify-between items-center ">
+        <h1 className="text-white text-xl">Top Products</h1>
+        <p className="text-textYellow flex justify-center items-center  gap-x-4">
+          {" "}
+          Get Similar Products <LuMoveRight className="text-3xl mt-1" />
+        </p>
+      </div>
+      {/* First 4 products */}
+      <ProductSection products={topProducts.slice(0, 4)} />
+  
+      {/* Banner Section */}
+      <div className="w-full bg-blue-500 text-white text-center p-4 my-4">
+        {/* Replace with your banner content */}
+        <h2 className="text-xl font-bold">Special Offer! Limited Time Only!</h2>
+        <p className="mt-2">Check out our amazing deals and discounts on top products.</p>
+      </div>
+  {/* nav */}
+  <div className="flex justify-between items-center ">
+        <h1 className="text-white text-xl">New Products</h1>
+        <p className="text-textYellow flex justify-center items-center  gap-x-4">
+          {" "}
+          Get Similar Products <LuMoveRight className="text-3xl mt-1" />
+        </p>
+      </div>
+      {/* Remaining 4 products */}
+      <ProductSection products={topProducts.slice(4, 8)} />
+    </div>
+  );
+  
 
-export default TopProducts;
+
+
+export default ProductDisplay;

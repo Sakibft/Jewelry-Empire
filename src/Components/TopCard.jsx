@@ -30,7 +30,7 @@ const TopCard = () => {
       {topCard.map((item, index) => (
         <div key={index} className="w-[404px] h-[213px]  text-white rounded-xl flex justify-center items-center gap-x-8 bg-secondary p-3">
            
-          <img src={item.image} alt="" />
+          <img src={item.image} alt="image" />
 
           <div className="space-y-4 w-[185px]">
             <h1 className="text-textYellow text-2xl">{item.title}</h1>
