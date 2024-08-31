@@ -9,7 +9,7 @@ export default {
     extend: {
       colors: {
         primary: "#131313",
-         secondary: "#C0C0C0",
+         secondary: "#C0C0C026",
          "textYellow": "#E8CF36",
          "smTexColor": "#E6E6E7"
       },

@@ -2,6 +2,7 @@
 import Banner from './Banner';
 import Footer from './Footer';
 import Header from './Header';
+import TopCard from './TopCard';
  
 
 const Layout = () => {
@@ -10,6 +11,7 @@ const Layout = () => {
             <Header></Header>
          <div className=''>
          <Banner></Banner>
+         <TopCard></TopCard>
          </div>
          <Footer></Footer>
         </div>
