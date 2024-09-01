@@ -63,8 +63,8 @@ const topProducts = [
 ];
 
 const ProductSection = ({ products }) => (
-  <div className="flex justify-center items-center ">
-    <div className="grid lg:grid-cols-4 md:grid-cols-3 gap-x-[138px] gap-y-2 m-5  ">
+  <div className="flex justify-center items-center  ">
+    <div className="grid lg:grid-cols-4 md:grid-cols-3  lg:gap-x-24 gap-6 gap-y-2 m-5  ">
       {products.map((item, index) => (
         <div
           className="text-white border border-gray-700 hover:border-gray-500 duration-300 w-[275px] h-[338px] flex flex-col justify-end items-center rounded-md "

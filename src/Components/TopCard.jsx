@@ -2,31 +2,30 @@ import React from "react";
 import anti from '../../src/image/anti.png'
 import chori from '../../src/image/chori.png'
 import her from '../../src/image/her.png'
+const topCard = [
+  {
+    image: anti,
+    title: "gold & Bracelets",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit Malesuada integer id diam ",
+  },
+  {
+    image: chori,
+    title: "gold & dimosds rings",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit Malesuada integer id diam ",
+  },
+  {
+    image: her,
+    title: "gold & Bracelets ",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit Malesuada integer id diam ",
+  },
+];
 const TopCard = () => {
-  const topCard = [
-    {
-      image: anti,
-      title: "gold & Bracelets",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit Malesuada integer id diam ",
-    },
-    {
-      image: chori,
-      title: "gold & dimosds rings",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit Malesuada integer id diam ",
-    },
-    {
-      image: her,
-      title: "gold & Bracelets ",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit Malesuada integer id diam ",
-    },
-  ];
-
   return (
  <div className="flex justify-center mt-10 mb-10 ">
-       <div className="grid grid-cols-3 gap-x-28 ">
+       <div className="grid lg:grid-cols-3 md:grid-cols-2 lg:gap-x-28 md:gap-10 gap-2 cursor-pointer">
       {topCard.map((item, index) => (
         <div key={index} className="w-[404px] h-[213px]  text-white rounded-xl flex justify-center items-center gap-x-8 bg-secondary p-3">
            
