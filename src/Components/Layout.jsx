@@ -10,14 +10,15 @@ import TopProducts from './TopProducts';
 
 const Layout = () => {
     return (
-        <div className='  mb-4 h-8 md:w-[1440px] mx-auto'>
+        <div className='  mb-4 h-8 md:w-[1440px] mx-auto  '>
             <Header></Header>
-         <div className=''>
+      
          <Banner></Banner>
          <TopCard></TopCard>
          <TopProducts></TopProducts>
          <ShopByCategory></ShopByCategory>
-         </div>
+         <ShopBYGender></ShopBYGender>
+     
          <Footer></Footer>
         </div>
     );
