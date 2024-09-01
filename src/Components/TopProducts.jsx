@@ -8,6 +8,9 @@ import im5 from "../../src/image/im5.png";
 import im6 from "../../src/image/im6.png";
 import im7 from "../../src/image/im7.png";
 import im8 from "../../src/image/im8.png";
+import start from '../../src/image/startImage.png';
+import end from '../../src/image/endImage.png';
+
  
   const topProducts = [
     {
@@ -99,10 +102,19 @@ import im8 from "../../src/image/im8.png";
       <ProductSection products={topProducts.slice(0, 4)} />
   
       {/* Banner Section */}
-      <div className="w-full bg-blue-500 text-white text-center p-4 my-4">
-        {/* Replace with your banner content */}
-        <h2 className="text-xl font-bold">Special Offer! Limited Time Only!</h2>
-        <p className="mt-2">Check out our amazing deals and discounts on top products.</p>
+      <div className="h-[312px]  mt-10 mb-10 flex justify-between items-center bg-secondary">
+        {/* start image */}
+        <img src={start} alt="" className="h-[234px] w-[255px]  ml-6 " />
+        {/* center section */}
+        <div className="flex flex-col justify-center items-center gap-y-4">
+          <h1 className="text-white font-semibold text-2xl">Silver-Dimonds Earrings </h1>
+          <hr className="border w-44 border-textYellow" />
+          <p className="text-smTexColor text-sm 
+          w-[605Px]  text-center uppercase">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet integer lorem amet arcu egestas congue. Rhoncus scelerisque m aenean ac. Cursus in at sagittis vivamus  Rhoncus scelerisque m aenean </p>
+          <p className="text-textYellow font-semibold font-inter underline uppercase">learn more</p>
+        </div>
+        {/* end iamge */}
+        <img  src={end} alt="" />
       </div>
   {/* nav */}
   <div className="flex justify-between items-center ">
