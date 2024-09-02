@@ -2,7 +2,7 @@ import React from "react";
 import { FaFacebookF, FaTwitter } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io";
 import { IoSearch } from "react-icons/io5";
-
+import nabLogo from '../../src/image/logo.png'
 const Header = () => {
 
   const NavItem = [
@@ -40,7 +40,7 @@ const Header = () => {
           <span className="md:text-4xl">J</span>ewelry{" "}
         </h1>
 
-        <img src="/src/image/logo.png" alt="" />
+        <img src={nabLogo} alt="" />
 
         <h1>
           <span className="md:text-4xl">E</span>mpire
