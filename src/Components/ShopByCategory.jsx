@@ -64,17 +64,17 @@ const subTitle = 'Browse through your favourite categories. We`ve got them all!'
              <Title title={title} subTitle={subTitle}></Title>
 
          <div className='flex justify-center items-center'>
-         <div className='grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 md:gap-x-[60px] gap-2 md:gap-y-4'>
+         <div className='grid lg:grid-cols-5  grid-cols-2 md:gap-x-[60px] gap-2 md:gap-y-6'>
                 {
                     category.map((item,index) => (
-                        <div key={index} className='w-[228px] h-[276px] border border-gray-500 rounded-xl p-[1px] cursor-pointer hover:border-gray-300 duration-300'>
+                        <div key={index} className='md:w-[228px] md:h-[276px] w-[180px] border border-gray-500 rounded-xl p-[1px] cursor-pointer hover:border-gray-300 duration-300 '>
                             <img src={item.image} alt=""  
                             className='bg-cover'
                             />
                             
-                            <p className='text-textYellow font-semibold font-inter text-center '>{item.title}</p>
+                           <div className='p-2'> <p className='text-textYellow font-semibold font-inter text-center'>{item.title}</p>
                             <p className='text-smTexColor flex justify-center items-center '>Explore <FiChevronRight className='mt-1' />
-                            </p>
+                            </p></div>
                         </div>
                     ))
                 }

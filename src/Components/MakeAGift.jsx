@@ -2,7 +2,7 @@ import React from "react";
 import im from "../../src/image/bootomfooter.png";
 const MakeAGift = () => {
   return (
-    <div className="md:h-[467px] bg-secondary mt-10  md:flex justify-center items-center md:gap-x-32 ">
+    <div className="lg:h-[467px] bg-secondary mt-10  lg:flex lg:justify-center   justify-around items-center md:gap-x-32 ">
       {/* left */}
       <div className=" flex flex-col items-center justify-center md:w-[538px] md:h-[324px] md:space-y-5 space-y-2">
         {/* image */}

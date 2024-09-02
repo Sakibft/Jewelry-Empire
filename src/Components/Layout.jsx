@@ -12,12 +12,14 @@ const Layout = () => {
     <div className="  mb-4 h-8 md:w-[1440px] mx-auto  ">
       <Header></Header>
 
-      <Banner></Banner>
+     <div className="md:m-0 m-4">
+     <Banner></Banner>
       <TopCard></TopCard>
       <TopProducts></TopProducts>
       <ShopByCategory></ShopByCategory>
       <ShopBYGender></ShopBYGender>
       <MakeAGift></MakeAGift>
+     </div>
       <Footer></Footer>
     </div>
   );

@@ -5,13 +5,13 @@ const Banner = () => {
   return (
     <div>
       <div
-        className="h-[588px] bg-no-repeat bg-cover"
+        className="md:h-[588px] bg-no-repeat bg-cover  rounded-md  md:p-0 p-4   "
         style={{ backgroundImage: `url(${bgImg})` }}
       >
-        <div className="flex justify-around items-center h-[588px] ">
+        <div className="md:flex justify-around items-center md:h-[588px] ">
           <img src={ring} alt="" className=" -rotate-12 " />
-          <div className=" space-y-6 w-[517px]">
-            <h1 className="text-white font-bold text-3xl font-inter">
+          <div className=" md:space-y-6 space-y-3 md:w-[517px]">
+            <h1 className="text-white font-bold md:text-3xl text-xl font-inter">
               NEW COLLECTION <span className="text-textYellow">“dimond”</span>
             </h1>
             <p className="text-smTexColor">

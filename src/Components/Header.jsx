@@ -35,20 +35,20 @@ const Header = () => {
       <div className="text-white flex justify-center items-center uppercase text-lg font-fell gap-x-3  ">
         <h1>
           {" "}
-          <span className="text-4xl">J</span>ewelry{" "}
+          <span className="md:text-4xl">J</span>ewelry{" "}
         </h1>
 
         <img src="/src/image/logo.png" alt="" />
 
         <h1>
           {" "}
-          <span className="text-4xl">E</span>mpire
+          <span className="md:text-4xl">E</span>mpire
         </h1>
       </div>
       {/* Bottom nav */}
 
       <nav className="flex items-center justify-center   px-4 py-2 text-white    ">
-        <ul className="flex items-center justify-between gap-10 text-smTexColor text-xl uppercase">
+        <ul className="md:flex hidden items-center justify-between gap-10 text-smTexColor text-xl uppercase">
 
           {
             NavItem?.map(item => (

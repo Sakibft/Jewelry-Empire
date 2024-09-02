@@ -31,7 +31,7 @@ const Footer = () => {
   return (
     <div className="md:h-[412px]  p-4 pt-10 flex flex-col items-center ">
       {/* top */}
-      <div className="grid lg:grid-cols-4  gap-x-36 mb-5">
+      <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-x-36 mb-5">
         {/* 1 */}
         <div>
           <h1 className="text-textYellow text-xl font-semibold mb-5 font-inter">Useful Link</h1>

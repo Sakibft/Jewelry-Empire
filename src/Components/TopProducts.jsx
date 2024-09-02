@@ -64,10 +64,10 @@ const topProducts = [
 
 const ProductSection = ({ products }) => (
   <div className="flex justify-center items-center  ">
-    <div className="grid lg:grid-cols-4 md:grid-cols-3  lg:gap-x-24 gap-6 gap-y-2 m-5  ">
+    <div className="grid lg:grid-cols-4    md:gap-x-24  gap-2  md:grid-cols-3 grid-cols-2">
       {products.map((item, index) => (
         <div
-          className="text-white border border-gray-700 hover:border-gray-500 duration-300 w-[275px] h-[338px] flex flex-col justify-end items-center rounded-md "
+          className="text-white border border-gray-700 hover:border-gray-500 duration-300 md:w-[275px] md:h-[338px] flex flex-col justify-end items-center rounded-md "
           key={index}
         >
           <img
@@ -77,7 +77,7 @@ const ProductSection = ({ products }) => (
             className="max-h-[220px] object-contain "
           />
           <div className="p-4 space-y-2">
-            <p className="text-smTexColor text-sm w-[220px]">{item.title}</p>
+            <p className="text-smTexColor text-sm md:w-[220px]">{item.title}</p>
             <div className="flex justify-between">
               <p className="font-semibold">RS {item.Rs}</p>
               <p>{item.rating}</p>
@@ -92,7 +92,7 @@ const ProductSection = ({ products }) => (
 const ProductDisplay = () => (
   <div>
     {/* nav */}
-    <div className="flex justify-between items-center ">
+    <div className="flex justify-between items-center mb-5">
       <h1 className="text-white text-xl">Top Products</h1>
       <p className="text-textYellow flex justify-center items-center  gap-x-4">
         {" "}
@@ -103,18 +103,18 @@ const ProductDisplay = () => (
     <ProductSection products={topProducts.slice(0, 4)} />
 
     {/* Banner Section */}
-    <div className="h-[312px]  mt-10 mb-10 flex justify-between items-center bg-secondary">
+    <div className="lg:h-[312px]  mt-10 mb-10 lg:flex justify-between items-center bg-secondary   md:p-0 p-5 md:space-y-0 space-y-3">
       {/* start image */}
       <img src={start} alt="" className="h-[234px] w-[255px]  ml-6 " />
       {/* center section */}
-      <div className="flex flex-col justify-center items-center gap-y-4">
-        <h1 className="text-white font-semibold text-2xl">
+      <div className="flex flex-col lg:justify-center lg:items-center gap-y-4">
+        <h1 className="text-white font-semibold lg:text-2xl text-xl">
           Silver-Dimonds Earrings{" "}
         </h1>
-        <hr className="border w-44 border-textYellow" />
+        <hr className="border lg:w-44 w-32 border-textYellow" />
         <p
           className="text-smTexColor text-sm 
-          w-[605Px]  text-center uppercase"
+          lg:w-[605Px]  text-center uppercase"
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet integer
           lorem amet arcu egestas congue. Rhoncus scelerisque m aenean ac.
@@ -125,10 +125,10 @@ const ProductDisplay = () => (
         </p>
       </div>
       {/* end iamge */}
-      <img src={end} alt="" />
+      <img src={end} alt="image"  />
     </div>
     {/* nav */}
-    <div className="flex justify-between items-center ">
+    <div className="flex justify-between items-center mb-5">
       <h1 className="text-white text-xl">New Products</h1>
       <p className="text-textYellow flex justify-center items-center  gap-x-4">
         {" "}

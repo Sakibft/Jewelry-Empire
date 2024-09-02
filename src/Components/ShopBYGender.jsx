@@ -26,12 +26,12 @@ const subTitle = "Browse through your favourite categories. We`ve got them all!"
         <div>
             <Title title={title} subTitle={subTitle}></Title>
             {/* Gender card */}
-            <div className=' flex justify-center items-center '>
+            <div className=' flex justify-center items-center  md:m-0 m-4 '>
 
-            <div className='grid lg:grid-cols-3 md:grid-cols-2 gap-x-10'>
+            <div className='grid lg:grid-cols-3  gap-x-20 md:space-y-0 space-y-4'>
                 {
                     genderDaTa.map((item,inx)=>(
-                        <div key={inx} className='w-[420px] h-[333px] border border-gray-500 hover:border-gray-400 duration-300 rounded-md space-y-4 '>
+                        <div key={inx} className='md:w-[420px] md:h-[333px] border border-gray-500 hover:border-gray-400 duration-300 rounded-md space-y-4 '>
                             <img src={item.image} alt="" />
 
                             <div className='flex justify-between  px-3'>
