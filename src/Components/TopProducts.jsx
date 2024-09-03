@@ -10,6 +10,8 @@ import im7 from "../../src/image/im7.png";
 import im8 from "../../src/image/im8.png";
 import start from "../../src/image/startImage.png";
 import end from "../../src/image/endImage.png";
+import { Rating } from "@smastrom/react-rating";
+import '@smastrom/react-rating/style.css'
 
 const topProducts = [
   {
@@ -28,7 +30,7 @@ const topProducts = [
     image: im3,
     title: "Earring Necklace Jewellery Chain Gemstone  ",
     Rs: "122300",
-    rating: "5",
+    rating: "4.2",
   },
   {
     image: im4,
@@ -40,25 +42,25 @@ const topProducts = [
     image: im5,
     title: "Earring Necklace Jewellery Chain Gemstone",
     Rs: "283320",
-    rating: "4.2",
+    rating: "4.4",
   },
   {
     image: im6,
     title: "Earring Necklace Jewellery Chain Gemstone",
     Rs: "124000",
-    rating: "4.9",
+    rating: "4.4",
   },
   {
     image: im7,
     title: "Earring Necklace Jewellery Chain Gemstone",
     Rs: "3l4566",
-    rating: "5",
+    rating: "3",
   },
   {
     image: im8,
     title: "Earring Necklace Jewellery Chain Gemstone",
     Rs: "3l4566",
-    rating: "5",
+    rating: "4.6",
   },
 ];
 
@@ -80,7 +82,7 @@ const ProductSection = ({ products }) => (
             <p className="text-smTexColor text-sm md:w-[220px]">{item.title}</p>
             <div className="flex justify-between">
               <p className="font-semibold">RS {item.Rs}</p>
-              <p>{item.rating}</p>
+              <Rating style={{ maxWidth: 80 }} value={item.rating} readOnly />
             </div>
           </div>
         </div>
@@ -125,7 +127,7 @@ const ProductDisplay = () => (
         </p>
       </div>
       {/* end iamge */}
-      <img src={end} alt="image"  />
+      <img src={end} alt="image" />
     </div>
     {/* nav */}
     <div className="flex justify-between items-center mb-5">
