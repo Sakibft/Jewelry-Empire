@@ -50,11 +50,11 @@ const Header = () => {
       <label className="relative md:hidden flex  justify-center items-center mt-2">
       <input
           type="text"
-          className="text-white w-[350px]    rounded-full border border-gray-400  bg-primary md:px-6 px-2 md:p-1"
+          className="text-white w-[350px]    rounded-full border border-gray-400  bg-primary  px-2 md:p-1"
           placeholder="Search for Gold .."
         />
 
-        <IoSearch className="text-smTexColor absolute right-10 mt-0    hover:text-textYellow cursor-pointer"  />
+        <IoSearch className="text-smTexColor absolute right-12 mt-0    hover:text-textYellow cursor-pointer"  />
       </label>
    
       {/* Bottom nav */}

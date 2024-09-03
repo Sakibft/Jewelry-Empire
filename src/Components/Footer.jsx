@@ -31,11 +31,11 @@ const Footer = () => {
   return (
     <div className="md:h-[412px]  p-4 pt-10 flex flex-col items-center ">
       {/* top */}
-      <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-x-36 mb-5">
+      <div className="grid lg:grid-cols-4 grid-cols-2 md:gap-x-36 mb-5 md:gap-y-0 gap-y-5">
         {/* 1 */}
         <div>
-          <h1 className="text-textYellow text-xl font-semibold mb-5 font-inter">Useful Link</h1>
-          <div className="text-smTexColor  space-y-2">
+          <h1 className="text-textYellow md:text-xl font-semibold md:mb-5 mb-2 font-inter">Useful Link</h1>
+          <div className="text-smTexColor  md:space-y-2">
             {footerItemOne.map((item) => (
               <p className="text-smTexColor" key={item}>{item}</p>
             ))}
@@ -43,8 +43,8 @@ const Footer = () => {
         </div>
         {/* 2 */}
         <div>
-        <h1 className="text-textYellow text-xl font-semibold mb-5 font-inter">Information</h1> 
-      <div className="text-smTexColor space-y-2">
+        <h1 className="text-textYellow md:text-xl font-semibold md:mb-5 mb-2 font-inter">Information</h1> 
+      <div className="text-smTexColor md:space-y-2">
       {
             footerItemTwo?.map(item => (
                 <p className="text-smTexColor" key={item}> {item}</p>
@@ -54,7 +54,7 @@ const Footer = () => {
         </div>
         {/* 3 */}
         <div className="w-[228px]">
-             <h1 className="text-textYellow text-xl font-semibold font-inter mb-5">Contact Us</h1>                                    <div className="space-y-2">
+             <h1 className="text-textYellow md:text-xl font-semibold font-inter md:mb-5 mb-2">Contact Us</h1>                                    <div className="md:space-y-2">
               {
                 contactInfo.map((item,index)=>(
                   <p key={index} className="text-smTexColor flex items-center gap-x-3">
@@ -67,9 +67,9 @@ const Footer = () => {
         </div>
         {/* 4 */}
         <div >
-        <h1 className="text-textYellow text-xl font-semibold font-inter mb-5">Download The Apps</h1>   
+        <h1 className="text-textYellow md:text-xl font-semibold font-inter md:mb-5 mb-2">Download The Apps</h1>   
         <img className="mb-5" src={stor} alt="" />    
-        <p className="text-textYellow flex items-center gap-x-4">Follow Us On   <span className="text-textYellow flex gap-x-3 ">
+        <p className="text-textYellow flex items-center md:gap-x-4 ">Follow Us On   <span className="text-textYellow flex gap-x-3 ">
           <FaFacebookF />
           <FaTwitter />
           <IoLogoInstagram />
@@ -79,7 +79,7 @@ const Footer = () => {
       <hr className="w-full  border-gray-400 mb-6" />
       {/* foot */}
       <div className=" text-smTexColor  flex flex-col justify-center items-center">
-        <p>@ 2024 Jewelery empire company limited. All right reserved.</p>
+        <p className="text-center">@ 2024 Jewelery empire company limited. All right reserved.</p>
         <p>Tearm & conditions | <a href="https://github.com/Sakibft" target="_blank" className="underline hover:duration-500 hover:opacity-80 text-textYellow cursor-pointer" >Privacy policy</a></p>
       </div>
     </div>
